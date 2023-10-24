@@ -13,7 +13,7 @@ number = random.randint(1, 100)
 print('Well, ' + myName + ', I am thinking of a number between 1 and 100.')
 
 # Tells you if you're high or low relevant to your answer.
-for guessesTasken in range(6):
+for guessesTaken in range(6):
     print('Take a guess.')
     guess = input()
     guess = int(guess)
