@@ -1,7 +1,7 @@
 print('What do you get when you cross a snowman with a vampyre?')
-input()
+input() # Inputs added so punchline isn't immediately revealed
 print('Frostbite!')
-print()
+print() # Empty function to print a blank line
 print('What do dentists call an astronaut\'s cavity?')
 input()
 print('A black hole!')
