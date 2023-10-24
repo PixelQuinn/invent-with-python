@@ -28,3 +28,11 @@ def checkCave (chosenCave) :
     print()
     time.sleep(2)
 
+    # random int function to set one result to the friendly cave.
+    friendlyCave = random.randit(1, 2)
+
+    # If, else function to display result depending on if it was the correct guess.
+    if chosenCave == str(friendlyCave) :
+        print('Gives you his treasure!')
+    else:
+        print('Gobbles you down in one bite!')
