@@ -1,14 +1,18 @@
 # This is a Guess the Number game.
 import random
 
+# Assigns the variable for guesses
 guessesTaken = 0
 
+# Variable for players name and greeting
 print('Hello! What is your name?')
 myName = input()
 
+# Random number variable
 number = random.randint(1, 100)
-print('Well, ' + myName + ', I am thinking of a number between 1 and 20.')
+print('Well, ' + myName + ', I am thinking of a number between 1 and 100.')
 
+# Tells you if you're high or low relevant to your answer.
 for guessesTasken in range(6):
     print('Take a guess.')
     guess = input()
@@ -23,6 +27,7 @@ for guessesTasken in range(6):
     if guess == number:
         break
 
+# Game results
 if guess == number:
     guessesTaken = str(guessesTaken + 1)
     print('Good job, ' + myName + ' you guessed my number in ' + guessesTaken + ' guesses!')
