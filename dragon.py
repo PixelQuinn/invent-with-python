@@ -4,9 +4,9 @@ import time
 # Function to display intro to game
 def displayIntro():
     print('''You are in a land full of dragons. In front of you, 
-          you see two caves. In one cave, the dragon is friendly 
-          and will share his treasure with you. The other dragon 
-          is greedy and hungry, and will eat you on sight.''')
+you see two caves. In one cave, the dragon is friendly 
+and will share his treasure with you. The other dragon 
+is greedy and hungry, and will eat you on sight.''')
     print()
 
 # function for cave input
@@ -29,7 +29,7 @@ def checkCave (chosenCave) :
     time.sleep(2)
 
     # random int function to set one result to the friendly cave.
-    friendlyCave = random.randit(1, 2)
+    friendlyCave = random.randint(1, 2)
 
     # If, else function to display result depending on if it was the correct guess.
     if chosenCave == str(friendlyCave) :
