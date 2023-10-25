@@ -81,4 +81,8 @@ def getGuess(alreadyGuessed) :
         else :
             return guess
         
-        
+def playAgain() :
+    # This function returns True if the player wants to play again; otherwise, it returns False.
+    print('Do you want to play asgain? (yes or no)')
+    return input().lower().startswith('y')
+
