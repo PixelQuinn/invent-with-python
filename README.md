@@ -13,3 +13,4 @@ In this game, the player is in a land full of dragons. The dragons all live in c
 
 Simple text game in terminal to illustrate while statements, multiline strings, and creating functions with the def keyword.
 # Hangman
+Playable hangman game in the python terminal; using ascii art to form the display for the game.
