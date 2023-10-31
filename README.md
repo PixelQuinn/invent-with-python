@@ -19,4 +19,6 @@ The program functions off of the random.int() function as the previous games.Thi
 Simple text game in terminal to illustrate while statements, multiline strings, and creating functions with the def keyword.
 # Hangman
 Playable hangman game in the python terminal; using ascii art to form the display for the game.
+This game has been updated to pull a random word from a dictionaries of words to add more depth and categories. The game uses more complex loops to display the ascii art, display the board and category, and replace the '_' blanks with the correct letters.
+
 ![Hangman](./images/hangman.png)
