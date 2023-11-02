@@ -6,6 +6,7 @@ The provided Python code is a basic program that greets the user, asks for their
 
 # Guess the Number Game
 The Python code is a 'Guess the Number' game. It prompts the user for their name, generates a random number between 1 and 100, and allows the user to guess the number within ten attempts. It provides feedback on whether the guess is too high or too low. The game ends by informing the user if they guessed the number correctly and how many attempts it took. This code demonstrates the use of loops, conditionals, random number generation, and user input in Python.
+
 ![NumberGame](./images/number.png)
 # Joke telling program
 The Python code presents a series of jokes using the print function to set up the joke, input() to pause the program for the user to participate, and then it delivers the punchline. This sequence of prompts and user interaction demonstrates simple conversational flow in a program using Python's input/output functions to create a joke-telling interaction.
