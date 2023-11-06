@@ -104,4 +104,5 @@ def getComputerMove (board, computerLetter) :
     if isSpaceFree (board, 5) :
         return 5
     
-    
+    # Move on one of the sides.
+    return chooseRandomMoveFromList (board, [2, 4, 6, 8])
