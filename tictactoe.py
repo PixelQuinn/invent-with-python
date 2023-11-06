@@ -95,6 +95,15 @@ def getComputerMove (board, computerLetter) :
             makeMove (boardCopy, computerLetter, i)
             if isWinner (boardCopy, computerLetter) :
                 return i
+            
+    # Check if the player could win on their next move and block them.
+    for i in range (1, 10) :
+        boardCopy = getBoardCopy (board)
+        if isSpaceFree (boardCopy, i) :
+            makeMove (boardCopy, playerLetter , i)
+            if isWinner (boardCopy, playerLetter) :
+                return i
+            
     # Try to take one of the corners, if they are free.
     move = chooseRandomMoveFromList (board, [1, 3, 7, 9])
     if move != None :
