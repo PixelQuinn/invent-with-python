@@ -25,3 +25,10 @@ if letter == 'X' :
     return ['X','O']
 else :
     return ['O', 'X']
+
+def whoGoesFirst () :
+    # Randomly choose the player who goes first.
+    if random.randint(0,1) == 0 :
+        return 'computer'
+    else :
+        return 'player'
