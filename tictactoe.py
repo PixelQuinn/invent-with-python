@@ -18,7 +18,7 @@ def inputPlayerLetter () :
     letter = ''
     while not (letter == 'X' or letter == '0') :
         print ('Do you want to be X or 0?')
-        letter = input().upper()
+        letter = input ().upper ()
 
     # The first element in the list is the player's letter; the second is the computer's letter.
     if letter == 'X' :
@@ -59,10 +59,49 @@ def isSpaceFree (board, move) :
     # Return True if the passed move is free on the passed board.
     return board[move]== ' '
 
-def getPlayerMove(board) :
+def getPlayerMove (board) :
     # Let the player type in their move.
     move = ' '
-    while move not in '1 2 3 4 5 6 7 8 9'.split() or not isSpaceFree(board, int(move)) :
+    while move not in '1 2 3 4 5 6 7 8 9'.split () or not isSpaceFree (board, int(move)) :
         print ('What is your next move? (1-9)')
-        move = input()
-    return int(move)
+        move = input ()
+    return int (move)
+
+def chooseRandomMoveFromList (board, moveList) :
+    # Returns a valid move from the passed list on the passed board.
+    # Returns None if there is no valid move.
+    possibleMoves = []
+    for i in moveList :
+        if isSpaceFree (board, i) :
+            possibleMoves.append (i)
+
+        if len (possibleMoves) != 0 :
+            return random.choice (possibleMoves)
+        else :
+            return None
+        
+def getComputerMove (board, computerLetter) :
+    # Given a board and the computer's letter, determine where to move and return that move.
+    if computerLetter == 'X' :
+        playerLetter = 'O'
+    else :
+        playerLetter = 'X'
+
+    # Here is the algorithm for our Tic-Tac-Toe AI:
+    # First, check if we can win in the next move.
+    for i in range (1, 10) :
+        boardCopy = getBoardCopy (board)
+        if isSpaceFree (boardCopy, i) :
+            makeMove (boardCopy, computerLetter, i)
+            if isWinner (boardCopy, computerLetter) :
+                return i
+    # Try to take one of the corners, if they are free.
+    move = chooseRandomMoveFromList (board, [1, 3, 7, 9])
+    if move != None :
+        return move
+    
+    # Try to take the center, if it is free.
+    if isSpaceFree (board, 5) :
+        return 5
+    
+    
