@@ -19,3 +19,9 @@ def inputPlayerLetter () :
     while not (letter == 'X' or letter == '0') :
         print ('Do you want to be X or 0?')
         letter = input().upper()
+
+# The first element in the list is the player's letter; the second is the computer's letter.
+if letter == 'X' :
+    return ['X','O']
+else :
+    return ['O', 'X']
