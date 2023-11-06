@@ -33,3 +33,5 @@ The Python code is a Hangman game. It randomly selects a word from different cat
 ![Hangman](./images/hangman.png)
 
 # Tic-Tac-Toe
+
+This repository hosts a Python implementation of the classic game Tic-Tac-Toe. The code allows players to engage in a game against the computer, featuring a text-based interface. The AI employs a simple algorithm to make moves and determine the best strategy against the player. Enjoy the game and explore this Python-based Tic-Tac-Toe implementation!"
