@@ -67,18 +67,16 @@ def getPlayerMove (board) :
         move = input ()
     return int (move)
 
-def chooseRandomMoveFromList (board, moveList) :
-    # Returns a valid move from the passed list on the passed board.
-    # Returns None if there is no valid move.
+def chooseRandomMoveFromList(board, moveList):
     possibleMoves = []
-    for i in moveList :
-        if isSpaceFree (board, i) :
-            possibleMoves.append (i)
+    for i in moveList:
+        if isSpaceFree(board, i):
+            possibleMoves.append(i)
 
-        if len (possibleMoves) != 0 :
-            return random.choice (possibleMoves)
-        else :
-            return None
+    if len(possibleMoves) != 0:
+        return random.choice(possibleMoves)
+    else:
+        return None
         
 def getComputerMove (board, computerLetter) :
     # Given a board and the computer's letter, determine where to move and return that move.
