@@ -35,3 +35,17 @@ The Python code is a Hangman game. It randomly selects a word from different cat
 # Tic-Tac-Toe
 
 This repository hosts a Python implementation of the classic game Tic-Tac-Toe. The code allows players to engage in a game against the computer, featuring a text-based interface. The AI employs a simple algorithm to make moves and determine the best strategy against the player. Enjoy the game and explore this Python-based Tic-Tac-Toe implementation!"
+
+
+# Bagels
+
+This simple Python code implements a number guessing game where the player attempts to guess a randomly generated N-digit number. The game provides clues after each guess in the form of "Bagels," "Pico," and "Fermi."
+
+Rules:
+- The game generates a secret number with a specified number of digits (NUM_DIGITS).
+- The player has a limited number of guesses (MAX_GUESS) to figure out the secret number.
+- Clues are given after each guess:
+- "Bagels" means none of the digits are correct.
+- "Pico" means one digit is correct but in the wrong position.
+- "Fermi" means one digit is correct and in the correct position.
+- The game ends when the player correctly guesses the number or runs out of guesses.
