@@ -53,7 +53,7 @@ print(' Fermi            One digit is correct and in the correct position.')
 
 while True:
     secretNum = getSecretNum ()
-    print ('I have thought up a number. You have %s guesses tp get it.' %(MAX_GUESS))
+    print ('I have thought up a number. You have %s guesses to get it.' %(MAX_GUESS))
 
     guessesTaken = 1
     while guessesTaken <= MAX_GUESS :
