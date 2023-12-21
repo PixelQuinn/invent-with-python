@@ -30,7 +30,8 @@ def getClues (guess, secretNum) :
         
         clues.sort()
         return ' '.join(clues)
-    
+
+# Function to make sure string only has numbers.    
 def isOnlyDigits(num) :
     # Returns True if num is a string of only digits. Otherwise, returns False.
     if num == '' :
